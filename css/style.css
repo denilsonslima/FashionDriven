@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background: #E5E5E5;
+}
+
+header {
+    width: 100vw;
+    height: 90px;
+    padding-left: 80px;
+    display: flex;
+    align-items: center;
+    background-color: #404EED;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+main {
+    max-width: 1366px;
+    width: 100vw;
+    height: 785px;
+    display: flex;
+    background: #E5E5E5;
+    margin: 0 auto;
+    margin-top: 90px;
+}   
+
+.principal {
+    width: 695px;
+    height: 100%;
+    padding: 38px 188px 40px 125px;
+    background: #FCFCFC;
+}
+
+.pag {
+    width: 100%;
+    height: 100%;
+}
+
+.pag h3, .pag h2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 10px;
+    color: #232323;
+}
+
+.tituloGola, .tituloTecido {
+    margin-top: 30px;
+}
+
+.pag .modeloCamisa, .modeloGola, .modeloEstilo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pag .modeloCamisa div, .pag .modeloGola div, .pag .modeloEstilo div {
+    width: 100px;
+    height: 100px;
+    background: #F2F2F2;
+    border-radius: 50%;
+    border: 0.5px solid #C4C4C4;
+}
+
+.pag .modeloCamisa div.clicado, .pag .modeloGola div.clicado, .pag .modeloEstilo div.clicado {
+    border: none;
+    box-shadow:0px 0px 0px 3px #404EED inset;
+}
+
+.pag .modeloCamisa div:nth-child(1) {
+    background: url(../img/tshirt.png) no-repeat center;
+}
+
+.pag .modeloCamisa div:nth-child(2) {
+    background: url(../img/Camiseta.png) no-repeat center;
+}
+
+.pag .modeloCamisa div:nth-child(3) {
+    background: url(../img/Mangalonga.png) no-repeat center;
+}
+
+.nomesCamisas, .tipoGola {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nomesCamisas p, .tipoGola p {
+    max-width: 100px;
+    width: 100%;
+    height: 21px;
+    text-align: center;
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #232323;
+}
+
+.tipoGola p:nth-child(2){
+    max-width: 120px;
+    width: 100%;
+}
+
+.pag h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.pag .link {
+    width: 100%;
+    height: 40px;
+    background: #F2F2F2;
+    border-radius: 10px;
+    border: none;
+    padding-left: 15px;
+}
+
+.pag .link::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #818181;
+}
+
+.pag .button {
+    width: 100%;
+    height: 40px;
+    margin-top: 23px;
+    background: #C4C4C4;
+    border-radius: 10px;
+    border: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FCFCFC;
+}
+
+.mulher {
+    width: 670px;
+    height: 100%;
+    background: #404EED;
+    position: relative;
+}
+
+.mulher img:nth-child(1) {
+    width: 257px;
+    height: 440px;
+    position: absolute;
+    top: 69px;
+    left: 35px;
+    z-index: 2;
+}
+
+.mulher img:nth-child(2) {
+    width: 340px;
+    height: 540px;
+    position: absolute;
+    top: 114px;
+    left: 166px;
+    z-index: 1;
+}
+
+.mulher img:nth-child(3) {
+    width: 270px;
+    height: 430px;
+    position: absolute;
+    top: 260px;
+    left: 370px;
+    z-index: 2;
+}
+
+.modelo {
+    width: 200px;
+    height: 670px;
+    position: absolute;
+    top: 28px;
+    left: 245px;
+    z-index: 3;
+}
+
+.modelo img:nth-child(1){
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.modelo img:nth-child(2){
+    width: 212px;
+    height: 684px;
+    position: absolute;
+    top: -13px;
+    left: -12px;
+    z-index: 3;
+}
+
+footer {
+    max-width: 1366px;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 30px 170px 40px 120px;
+    background: #F2F2F2;
+}
+
+footer h1 {
+    width: 174px;
+    height: 28px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #232323;
+    margin-bottom: 15px;
+}
+
+.camisas {
+    width: 100%;
+    height: 236px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.camisas .caixa {
+    width: 200px;
+    height: 100%;
+    background: #FFFFFF;
+    border-radius: 10px;
+
+}
+
+.foto {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.caixa h2 {
+    max-width: 135px;
+    width: 100%;
+    height: 23px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #232323;
+    margin: 0 auto;
+}
+
+.caixa .foto:nth-child(1){
+    background: url(../img/Blusa1.png);
+}
