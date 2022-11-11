@@ -7,13 +7,13 @@ function selecionarItem(seletor){
     seletor.classList.add("clicado")
 }
 
-const btn = document.getElementById("send")
-
+const btn = document.querySelector("#formulario")
 let value = ""
-btn.addEventListener("click", function(e){
+btn.addEventListener("submit", function(e){
     e.preventDefault();
     const name = document.getElementById("name");
     value = name.value;
     name.value = ""
     console.log(value)
+   
 })
