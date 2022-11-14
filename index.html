@@ -14,46 +14,58 @@
     <main>
         <section class="principal">
             <div class="pag">
-                <div class="secaoCamisa">
-                    <h3>Escolha o modelo</h3>
-                <div class="modeloCamisa">
-                    <div onclick="selecionarItem(this)"></div>
-                    <div onclick="selecionarItem(this)"></div>
-                    <div onclick="selecionarItem(this)"></div>
-                </div>
-                <div class="nomesCamisas">
-                    <p>T-shirt</p>
-                    <p>Camiseta</p>
-                    <p>Manga longa</p>
-                </div>
-                </div>
-                <div class="secaoGola">
-                    <h3 class="tituloGola">Escolha o gola</h3>
-                <div class="modeloGola">
-                    <div onclick="selecionarItem(this)"></div>
-                    <div onclick="selecionarItem(this)"></div>
-                    <div onclick="selecionarItem(this)"></div>
-                </div>
-                <div class="tipoGola">
-                    <p>Gola V</p>
-                    <p>Gola Redonda</p>
-                    <p>Gola polo</p>
-                </div>
-                </div>
-                <div class="secaoTecido">
-                    <h3 class="tituloTecido">Escolha o modelo</h3>
-                    <div class="modeloEstilo">
-                        <div onclick="selecionarItem(this)"></div>
-                        <div onclick="selecionarItem(this)"></div>
-                        <div onclick="selecionarItem(this)"></div>
-                    </div>
-                    <div class="nomesCamisas">
-                        <p>Seda</p>
-                        <p>Algodão</p>
-                        <p>Poliéster</p>
+                <div class="secao-modelo">
+                    <h3 class="titulo-secao">Escolha o modelo</h3>
+                    <div class="modelos">
+                        <div onclick="selecionarItem(this)" class="secao">
+                            <div class="fotos"></div>
+                            <h1>camisa</h1>
+                        </div>
+                        <div onclick="selecionarItem(this)" class="secao">
+                            <div class="fotos"></div>
+                            <h1>camisa</h1>
+                        </div>
+                        <div onclick="selecionarItem(this)" class="secao">
+                            <div class="fotos"></div>
+                            <h1>camisa longa</h1>
+                        </div>
                     </div>
                 </div>
-                <h2>Imagem de referência</h2>
+                <div class="secao-gola">
+                    <h3 class="titulo-secao">Escolha a Gola</h3>
+                    <div class="modelos">
+                        <div onclick="selecionarItem(this)" class="secao">
+                            <div class="fotos"></div>
+                            <h1>camisa</h1>
+                        </div>
+                        <div onclick="selecionarItem(this)" class="secao">
+                            <div class="fotos"></div>
+                            <h1>camisa</h1>
+                        </div>
+                        <div onclick="selecionarItem(this)" class="secao">
+                            <div class="fotos"></div>
+                            <h1>camisa longa</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="secao-tecido">
+                    <h3 class="titulo-secao">Escolha o Tecido</h3>
+                    <div class="modelos">
+                        <div onclick="selecionarItem(this)" class="secao">
+                            <div class="fotos"></div>
+                            <h1>camisa</h1>
+                        </div>
+                        <div onclick="selecionarItem(this)" class="secao">
+                            <div class="fotos"></div>
+                            <h1>camisa</h1>
+                        </div>
+                        <div onclick="selecionarItem(this)" class="secao">
+                            <div class="fotos"></div>
+                            <h1>camisa longa</h1>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="titulo-input">Imagem de referência</h2>
                 <form id="formulario">
                     <input class="link" type="url" placeholder="Insira o link" id="name" required>
                     <input class="button" type="submit" value="Confirmar pedido">

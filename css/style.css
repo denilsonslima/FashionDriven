@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 * {
     box-sizing: border-box;
 }
 body {
     background: #E5E5E5;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
 }
 
 header {
@@ -16,6 +21,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 10;
 }
 
 main {
@@ -40,74 +46,50 @@ main {
     height: 100%;
 }
 
-.pag h3, .pag h2 {
-    font-style: normal;
-    font-weight: 400;
+.titulo-secao {
     font-size: 18px;
     line-height: 21px;
-    margin-bottom: 10px;
     color: #232323;
+    margin-bottom: 8.6px;
 }
 
-.tituloGola, .tituloTecido {
-    margin-top: 30px;
-}
-
-.pag .modeloCamisa, .modeloGola, .modeloEstilo {
+.modelos {
     display: flex;
     justify-content: space-between;
 }
 
-.pag .modeloCamisa div, .pag .modeloGola div, .pag .modeloEstilo div {
+.fotos {
     width: 100px;
     height: 100px;
     background: #F2F2F2;
-    border-radius: 50%;
     border: 0.5px solid #C4C4C4;
+    border-radius: 50%;
 }
 
-.pag .modeloCamisa div.clicado, .pag .modeloGola div.clicado, .pag .modeloEstilo div.clicado {
+.modelos h1 {
+    width: 120px;
+    height: 21px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 21px;
+    color: #232323;
+    margin-top: 8.3px;
+    margin-bottom: 32px;
+    margin-left: -10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.pag .secao-modelo div.clicado, .pag .secao-gola div.clicado, .pag .secao-tecido div.clicado {
     border: none;
     box-shadow:0px 0px 0px 3px #404EED inset;
 }
 
-.pag .modeloCamisa div:nth-child(1) {
-    background: url(../img/tshirt.png) no-repeat center;
-}
-
-.pag .modeloCamisa div:nth-child(2) {
-    background: url(../img/Camiseta.png) no-repeat center;
-}
-
-.pag .modeloCamisa div:nth-child(3) {
-    background: url(../img/Mangalonga.png) no-repeat center;
-}
-
-.nomesCamisas, .tipoGola {
-    display: flex;
-    justify-content: space-between;
-}
-
-.nomesCamisas p, .tipoGola p {
-    max-width: 100px;
-    width: 100%;
-    height: 21px;
-    text-align: center;
-    margin-top: 10px;
-    font-style: normal;
-    font-weight: 400;
+.titulo-input {
     font-size: 18px;
     line-height: 21px;
     color: #232323;
-}
-
-.tipoGola p:nth-child(2){
-    max-width: 120px;
-    width: 100%;
-}
-
-.pag h2 {
-    margin-top: 30px;
     margin-bottom: 10px;
 }
 
@@ -121,8 +103,6 @@ main {
 }
 
 .pag .link::placeholder {
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 16px;
     color: #818181;
@@ -135,8 +115,6 @@ main {
     background: #C4C4C4;
     border-radius: 10px;
     border: none;
-    font-style: normal;
-    font-weight: 400;
     font-size: 20px;
     line-height: 23px;
     color: #FCFCFC;
@@ -214,8 +192,6 @@ footer {
 footer h1 {
     width: 174px;
     height: 28px;
-    font-style: normal;
-    font-weight: 400;
     font-size: 24px;
     line-height: 28px;
     text-align: center;
@@ -250,7 +226,6 @@ footer h1 {
     max-width: 135px;
     width: 100%;
     height: 23px;
-    font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
