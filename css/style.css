@@ -66,6 +66,43 @@ main {
     border-radius: 50%;
 }
 
+.secao-modelo .modelos .secao:nth-child(1) .fotos{
+    background: #F2F2F2 url(../img/tshirt.png) center no-repeat;
+}
+
+.secao-modelo .modelos .secao:nth-child(2) .fotos{
+    background: #F2F2F2 url(../img/Camiseta.png) center no-repeat;
+}
+
+.secao-modelo .modelos .secao:nth-child(3) .fotos{
+    background: #F2F2F2 url(../img/Mangalonga.png) center no-repeat;
+}
+
+.secao-gola .modelos .secao:nth-child(1) .fotos{
+    background: #F2F2F2 url(../img/GolaV.png) center no-repeat;
+}
+
+.secao-gola .modelos .secao:nth-child(2) .fotos{
+    background: #F2F2F2 url(../img/GolaRedonda.png) center no-repeat;
+}
+
+.secao-gola .modelos .secao:nth-child(3) .fotos{
+    background: #F2F2F2 url(../img/GolaPolo.png) center no-repeat;
+}
+
+.secao-tecido .modelos .secao:nth-child(1) .fotos{
+    background: #F2F2F2 url(../img/Seda.png) center no-repeat;
+}
+
+.secao-tecido .modelos .secao:nth-child(2) .fotos{
+    background: #F2F2F2 url(../img/Algodão.png) center no-repeat;
+}
+
+.secao-tecido .modelos .secao:nth-child(3) .fotos{
+    background: #F2F2F2 url(../img/Poliester.png) center no-repeat;
+}
+
+
 .modelos h1 {
     width: 120px;
     height: 21px;
