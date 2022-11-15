@@ -35,7 +35,8 @@ main {
 }   
 
 .principal {
-    width: 695px;
+    max-width: 695px;
+    width: 100%;
     height: 100%;
     padding: 38px 188px 40px 125px;
     background: #FCFCFC;
@@ -66,45 +67,45 @@ main {
     border-radius: 50%;
 }
 
-.secao-modelo .modelos .secao:nth-child(1) .fotos{
+.secao-modelo .modelos #secao:nth-child(1) .fotos{
     background: #F2F2F2 url(../img/tshirt.png) center no-repeat;
 }
 
-.secao-modelo .modelos .secao:nth-child(2) .fotos{
+.secao-modelo .modelos #secao:nth-child(2) .fotos{
     background: #F2F2F2 url(../img/Camiseta.png) center no-repeat;
 }
 
-.secao-modelo .modelos .secao:nth-child(3) .fotos{
+.secao-modelo .modelos #secao:nth-child(3) .fotos{
     background: #F2F2F2 url(../img/Mangalonga.png) center no-repeat;
 }
 
-.secao-gola .modelos .secao:nth-child(1) .fotos{
+.secao-gola .modelos #secao:nth-child(1) .fotos{
     background: #F2F2F2 url(../img/GolaV.png) center no-repeat;
 }
 
-.secao-gola .modelos .secao:nth-child(2) .fotos{
+.secao-gola .modelos #secao:nth-child(2) .fotos{
     background: #F2F2F2 url(../img/GolaRedonda.png) center no-repeat;
 }
 
-.secao-gola .modelos .secao:nth-child(3) .fotos{
+.secao-gola .modelos #secao:nth-child(3) .fotos{
     background: #F2F2F2 url(../img/GolaPolo.png) center no-repeat;
 }
 
-.secao-tecido .modelos .secao:nth-child(1) .fotos{
+.secao-tecido .modelos #secao:nth-child(1) .fotos{
     background: #F2F2F2 url(../img/Seda.png) center no-repeat;
 }
 
-.secao-tecido .modelos .secao:nth-child(2) .fotos{
+.secao-tecido .modelos #secao:nth-child(2) .fotos{
     background: #F2F2F2 url(../img/Algodão.png) center no-repeat;
 }
 
-.secao-tecido .modelos .secao:nth-child(3) .fotos{
+.secao-tecido .modelos #secao:nth-child(3) .fotos{
     background: #F2F2F2 url(../img/Poliester.png) center no-repeat;
 }
 
 
 .modelos h1 {
-    width: 120px;
+    width: 100px;
     height: 21px;
     text-align: center;
     font-size: 18px;
@@ -112,7 +113,6 @@ main {
     color: #232323;
     margin-top: 8.3px;
     margin-bottom: 32px;
-    margin-left: -10px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -158,14 +158,16 @@ main {
 }
 
 .mulher {
-    width: 670px;
+    max-width: 670px;
+    width: 100%;
     height: 100%;
     background: #404EED;
     position: relative;
 }
 
 .mulher img:nth-child(1) {
-    width: 257px;
+    max-width: 257px;
+    width: 100%;
     height: 440px;
     position: absolute;
     top: 69px;
@@ -174,7 +176,8 @@ main {
 }
 
 .mulher img:nth-child(2) {
-    width: 340px;
+    max-width: 340px;
+    width: 100%;
     height: 540px;
     position: absolute;
     top: 114px;
@@ -183,7 +186,8 @@ main {
 }
 
 .mulher img:nth-child(3) {
-    width: 270px;
+    max-width: 270px;
+    width: 100%;
     height: 430px;
     position: absolute;
     top: 260px;
@@ -221,13 +225,15 @@ main {
 footer {
     max-width: 1366px;
     width: 100vw;
+    min-height: 300px;
     margin: 0 auto;
     padding: 30px 170px 40px 120px;
     background: #F2F2F2;
 }
 
 footer h1 {
-    width: 174px;
+    max-width: 174px;
+    width: 100%;
     height: 28px;
     font-size: 24px;
     line-height: 28px;
@@ -237,10 +243,8 @@ footer h1 {
 }
 
 .camisas {
-    width: 100%;
-    height: 236px;
-    display: flex;
-    justify-content: space-between;
+    white-space: nowrap;
+    overflow-y: hidden;
 }
 
 .camisas .caixa {
@@ -248,15 +252,20 @@ footer h1 {
     height: 100%;
     background: #FFFFFF;
     border-radius: 10px;
-
+    display: inline-block;
+    margin-right: 10px;
 }
 
 .foto {
-    width: 180px;
+    max-width: 180px;
+    width: 100%;
     height: 180px;
     margin: 0 auto;
     margin-top: 16px;
     margin-bottom: 8px;
+    background-image: url(../img/Blusa1.png);
+    background-position: center;
+    background-size: cover;
 }
 
 .caixa h2 {
@@ -268,8 +277,4 @@ footer h1 {
     line-height: 23px;
     color: #232323;
     margin: 0 auto;
-}
-
-.caixa .foto:nth-child(1){
-    background: url(../img/Blusa1.png);
 }

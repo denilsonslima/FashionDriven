@@ -14,61 +14,63 @@
     <main>
         <section class="principal">
             <div class="pag">
-                <div class="secao-modelo">
-                    <h3 class="titulo-secao">Escolha o modelo</h3>
-                    <div class="modelos">
-                        <div onclick="selecionarItem(this)" class="secao">
-                            <div class="fotos"></div>
-                            <h1>camisa</h1>
-                        </div>
-                        <div onclick="selecionarItem(this)" class="secao">
-                            <div class="fotos"></div>
-                            <h1>camisa</h1>
-                        </div>
-                        <div onclick="selecionarItem(this)" class="secao">
-                            <div class="fotos"></div>
-                            <h1>camisa longa</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="secao-gola">
-                    <h3 class="titulo-secao">Escolha a Gola</h3>
-                    <div class="modelos">
-                        <div onclick="selecionarItem(this)" class="secao">
-                            <div class="fotos"></div>
-                            <h1>camisa</h1>
-                        </div>
-                        <div onclick="selecionarItem(this)" class="secao">
-                            <div class="fotos"></div>
-                            <h1>camisa</h1>
-                        </div>
-                        <div onclick="selecionarItem(this)" class="secao">
-                            <div class="fotos"></div>
-                            <h1>camisa longa</h1>
+                <div class="teste">
+                    <div class="secao-modelo">
+                        <h3 class="titulo-secao">Escolha o modelo</h3>
+                        <div class="modelos">
+                            <div onclick="selecionarItem(this)" id="secao" class="t-shirt">
+                                <div class="fotos"></div>
+                                <h1>T-shirt</h1>
+                            </div>
+                            <div onclick="selecionarItem(this)" id="secao" class="long">
+                                <div class="fotos"></div>
+                                <h1>Camiseta</h1>
+                            </div>
+                            <div onclick="selecionarItem(this)" id="secao" class="top-tank">
+                                <div class="fotos"></div>
+                                <h1>Manga longa</h1>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="secao-tecido">
-                    <h3 class="titulo-secao">Escolha o Tecido</h3>
-                    <div class="modelos">
-                        <div onclick="selecionarItem(this)" class="secao">
-                            <div class="fotos"></div>
-                            <h1>camisa</h1>
+                    <div class="secao-gola">
+                        <h3 class="titulo-secao">Escolha a Gola</h3>
+                        <div class="modelos">
+                            <div onclick="selecionarItem(this)" id="secao" class="v-neck">
+                                <div class="fotos"></div>
+                                <h1>Gola V</h1>
+                            </div>
+                            <div onclick="selecionarItem(this)" id="secao" class="round">
+                                <div class="fotos"></div>
+                                <h1>Gola Redonda</h1>
+                            </div>
+                            <div onclick="selecionarItem(this)" id="secao" class="polo">
+                                <div class="fotos"></div>
+                                <h1>Gola polo</h1>
+                            </div>
                         </div>
-                        <div onclick="selecionarItem(this)" class="secao">
-                            <div class="fotos"></div>
-                            <h1>camisa</h1>
-                        </div>
-                        <div onclick="selecionarItem(this)" class="secao">
-                            <div class="fotos"></div>
-                            <h1>camisa longa</h1>
+                    </div>
+                    <div class="secao-tecido">
+                        <h3 class="titulo-secao">Escolha o Tecido</h3>
+                        <div class="modelos">
+                            <div onclick="selecionarItem(this)" id="secao" class="silk">
+                                <div class="fotos"></div>
+                                <h1>Seda</h1>
+                            </div>
+                            <div onclick="selecionarItem(this)" id="secao" class="cotton">
+                                <div class="fotos"></div>
+                                <h1>Algodão</h1>
+                            </div>
+                            <div onclick="selecionarItem(this)" id="secao" class="polyester">
+                                <div class="fotos"></div>
+                                <h1>Poliéster</h1>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <h2 class="titulo-input">Imagem de referência</h2>
                 <form id="formulario">
-                    <input class="link" type="url" placeholder="Insira o link" id="name" required>
-                    <input class="button" type="submit" value="Confirmar pedido">
+                    <input class="link" type="text" placeholder="Insira o link" id="name" required>
+                    <input class="button" type="submit" value="Confirmar pedido" p>
                 </form>
             </div>
         </section>
@@ -89,25 +91,10 @@
                 <div class="foto"></div>
                 <h2>Criador: Agata</h2>
             </div>
-            <div class="caixa">
-                <div class="foto"></div>
-                <h2>Criador: Agata</h2>
-            </div>
-            <div class="caixa">
-                <div class="foto"></div>
-                <h2>Criador: Agata</h2>
-            </div>
-            <div class="caixa">
-                <div class="foto"></div>
-                <h2>Criador: Agata</h2>
-            </div>
-            <div class="caixa">
-                <div class="foto"></div>
-                <h2>Criador: Agata</h2>
-            </div>
         </div>
     </footer>
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

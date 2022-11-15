@@ -1,9 +1,16 @@
+const input = document.querySelector("#name");
+const btn = document.querySelector("#formulario");
+let elementosClicados, url;
+let value = ""
+let pegarValue;
+let modeloEscolhido, golaEscolhido, tecidoEscolhido, novoPedido;
+
 // let nameUser = prompt("Informe seu nome: ")
 // while(nameUser.length <  3){
 //     nameUser = prompt("Informe seu nome: ")
 // }
-let a, b, c, d;
-let value = ""
+let nameUser = "Eu"
+
 function selecionarItem(seletor){
     const pai = seletor.querySelector(".fotos");
     const clicado = seletor.parentNode.parentNode.querySelector(".clicado");
@@ -11,73 +18,98 @@ function selecionarItem(seletor){
         clicado.classList.remove("clicado")
     }
     pai.classList.add("clicado")
+    elementosClicados = document.querySelectorAll(".clicado")
     const secao = seletor.parentNode.parentNode.classList.value;
     if(secao === "secao-modelo"){
-        camisaClicada(true)
+        modeloEscolhido = seletor.classList.value;
+        botaoClicavel()
     } else if (secao === "secao-gola"){
-        golaClicada(true)
-    } else {   
-        tecidoClicado(true)
+        golaEscolhido = seletor.classList.value;
+        botaoClicavel()
+    } else {  
+        tecidoEscolhido = seletor.classList.value; 
+        botaoClicavel()
     }
-}
-
-function camisaClicada(contido){ 
-    a = contido
-    botaoClicavel()
-}
-
-function golaClicada(contido){
-    b = contido
-    botaoClicavel()
-}
-
-function tecidoClicado(contido){ 
-    c = contido 
-    botaoClicavel()
 }
 
 function botaoClicavel(){
     const botao = document.querySelector(".button")
-    if (a && b && c && d){
-        botao.style.background = "#404EED"
+    if ((url !== undefined) && (url !== "")){
+        if(elementosClicados.length === 3){
+            botao.style.background = "#404EED"
+            pegarValue = true
+        }
     } else {
         botao.style.background = "#C4C4C4";
+        pegarValue = false
     }
-}
-
-
-const btn = document.querySelector("#formulario")
-btn.addEventListener("submit", function(e){
-    e.preventDefault();    
-    const name = document.getElementById("name");
-    name.value = ""
-})
-
-function verificarUrl(){
-    const name = document.getElementById("name").value;
-    value = name;
-    botaoClicavel()
 }
 
 function trim(str) {
     return str
 }
 
-const input = document.querySelector("#name")
 input.onkeyup = function(){ 
-    value = trim(input.value)
-    if(value.includes("https:") && value.length > 6){
-        d = true
-        botaoClicavel()
-    } else if (value.includes("http:") && value.length > 5){
-        d = true
-        botaoClicavel()
-    } else {
-        d = false;
-        botaoClicavel()
-    }
-  }
+    url = value = trim(input.value)
+    botaoClicavel()
+}
 
-// input.addEventListener("keypress", function(e){
-//     verificarUrl()
-// })
+btn.addEventListener("submit", function(e){
+    e.preventDefault(); 
+    criarPedido() 
+    if(pegarValue){
+        const name = document.getElementById("name");
+        name.value = ""
+    }
+})
+
+
+function criarPedido (){
+    novoPedido= 
+    {
+        model: modeloEscolhido,
+        neck: golaEscolhido,
+        material: tecidoEscolhido,
+        image: value,
+        owner: nameUser,
+        author: "Denilson Lima"
+    }
+    console.log(novoPedido)
+} 
+
+//     const requisicao = axios.post("https://mock-api.driven.com.br/api/v4/shirts-api/shirts", novoPedido);
+//     requisicao.then(deuCerto)
+//     requisicao.catch(function (){})
+//     function deuCerto(){
+//         carregarPedidos()
+//     }
+// }
+
+// const api = "https://mock-api.driven.com.br/api/v4/shirts-api/shirts"
+// function carregarPedidos(){
+//     axios.get(api)
+//     .then(ana)
+//     .catch(error)
+// } 
+
+// function ana(promessa){
+//     const pedido = promessa.data
+//     const camisas = document.querySelector(".camisas")
+//     camisas.innerHTML = ""
+//     for(let i = 0; i < pedido.length; i++){
+//         camisas.innerHTML+= `
+//         <div class="caixa">
+//             <div class="foto"></div>
+//             <h2>Criador: ${pedido[i].owner}</h2>
+//         </div>
+//         `
+//     }
+//     const fotos = document.querySelectorAll(".foto") 
+//     for(let i = 0; i < fotos.length; i++){
+//         fotos[i].style.backgroundImage = `url(${pedido[i].image})`
+//     }
+// } 
+
+// function error(erro){
+//     console.log(erro)
+// } carregarPedidos()
